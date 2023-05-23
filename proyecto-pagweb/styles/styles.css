@@ -152,7 +152,7 @@
     text-align: center;
   }
 
-  /* -----------------------PRODUCTS MOBILE----------------------- */
+  /* -----------------------CONTACT MOBILE----------------------- */
   @media screen and (max-width:480px) {
     .form-conteiner{
       width: 80%;
