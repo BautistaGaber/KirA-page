@@ -9,14 +9,10 @@
     /* resetea la caja del navegador */
   }
 
-  body {
-    font-family: 'Montserrat', sans-serif;
-  }
-
   header {
+    background-color: #ffffff;
     border-bottom: 1px solid black;
     box-shadow: 5px 2px 15px;
-    background-color: rgb(255, 255, 255);
     position: sticky;
     top: 0;
     z-index: 1;
@@ -24,23 +20,8 @@
 
   /* -----------------------NAV----------------------- */
 
-  .navegation {
-    display: flex;
-  }
-
   .navegation .navegation-bar {
     justify-content: center;
-  }
-
-
-  header nav ul {
-    margin-right: 4%;
-    list-style: none;
-    text-decoration: none;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 60px;
   }
 
   header nav img {
@@ -64,23 +45,36 @@
 
   /* -----------------------PRODUCTS----------------------- */
 
+
   .products-container div img {
-    width: 100%;
-    height: 100%;
+    height: 70%;
+    width: 100%; 
     object-fit: cover;
   }
 
   .products-container {
-    height: fit-content;
+    height: 100%;
     padding: 3rem;
     margin: 1rem;
+    overflow: auto;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 25%);
+    grid-template-rows: repeat(6, 20%);
     row-gap: 2rem;
   }
 
+  .products-container div p{
+    text-align: center;
+  }
 
+/* -----------------------PRODUCTS DESKTOP----------------------- */
+  @media screen and (min-width:600px){
+    .products-container{
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2,50%);
+      column-gap: 1rem;
+      overflow: hidden;
+    }
+  }
 
   /* -----------------------ABOUT US----------------------- */
 
@@ -126,22 +120,23 @@
   }
 
   .contact-form {
+    padding: 1rem;
     width: 100%;
     height: 100%;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+
     font-size: 30px;
   }
 
   .button-conteiner {
+    margin-left: 40%;
     margin-top: 50px;
     width: 100px;
     height: 50px;
     display: flex;
-    justify-content: center;
   }
 
   .button-input {
@@ -149,7 +144,19 @@
   }
 
   .input-text {
-    width: 90%;
+    width: 100%;
+  }
+
+  .contact-title{
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  /* -----------------------PRODUCTS MOBILE----------------------- */
+  @media screen and (max-width:480px) {
+    .form-conteiner{
+      width: 80%;
+    }
   }
 
   /* -----------------------LOCATION----------------------- */
