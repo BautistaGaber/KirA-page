@@ -60,7 +60,7 @@ header {
 
 /* -----------------------ABOUT US----------------------- */
 .image-about {
-  background-image: url(../../proyecto-pagweb/img/fondoAbout.png);
+  background-image: url(../img/fondoAbout.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -78,7 +78,7 @@ header {
 
 /* -----------------------CONTACT----------------------- */
 .contact-page {
-  background-image: url(../../proyecto-pagweb/img/fondoAbout.png);
+  background-image: url(../img/fondoAbout.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -125,7 +125,7 @@ header {
 
 /* -----------------------LOCATION----------------------- */
 .location-page {
-  background-image: url(../../proyecto-pagweb/img/fondoAbout.png);
+  background-image: url(../img/fondoAbout.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
