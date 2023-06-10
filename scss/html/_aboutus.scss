@@ -1,0 +1,19 @@
+  @import "../utilidades/mixin";
+  /* -----------------------ABOUT US----------------------- */
+.image-about {
+    background-image: url(../../proyecto-pagweb/img/fondoAbout.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    @include widhei(100%,400px)
+  }
+  .text-about {
+    text-align: center;
+    color: #666;
+    margin: 40px 50px 40px;
+  }
+
+  .title-about {
+    text-align: center;
+    margin-top: 50px;
+  }

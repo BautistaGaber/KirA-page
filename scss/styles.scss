@@ -1,0 +1,86 @@
+@import "./utilidades/mixin";
+@import "./utilidades/variables";
+@import "./utilidades/extend";
+
+/* reset */
+* {
+    margin: 0;
+    /* espacio interior */
+    padding: 0;
+    /* espacio Exterior */
+    box-sizing: border-box;
+    /* resetea la caja del navegador */
+}
+
+
+/* -----------------------NAV----------------------- */
+header {
+    background-color: $color-primario-nav;
+    border-bottom: 1px solid black;
+    box-shadow: 5px 2px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    nav {
+        img {
+            @include widhei(90px, 40px);
+        }
+    }
+}
+
+.navegation{
+    .navegation-bar {
+    justify-content: center;
+  }
+} 
+
+@import "html/home";
+@import "html/products";
+@import "html/aboutus";
+@import "html/contact";
+@import "html/location";
+
+/* -----------------------FOOTER----------------------- */
+
+footer {
+    background-color: $color-footer;
+    border-top: 1px solid black;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 10px;
+    color: #000000;
+}
+
+.container {
+    width: 100%;
+}
+
+.icons {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        display: inline-block;
+        margin-right: 10px;
+        color: #666;
+        font-size: 18px;
+    }
+    a:hover {
+        color: #000000;
+      }
+
+      i {
+        display: inline-block;
+        @include widhei(30px, 30px);
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #ffffff;
+        border: 1px solid #c1c1c1;
+      }
+}
+.copy {
+    margin-top: 20px;
+  }

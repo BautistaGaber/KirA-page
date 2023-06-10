@@ -1,0 +1,55 @@
+@import "../utilidades/mixin";
+/* -----------------------CONTACT----------------------- */
+.contact-page {
+    background-image: url(../../proyecto-pagweb/img/fondoAbout.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    @include widhei(100%, 1000px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-conteiner {
+    border: 1px solid rgb(0, 0, 0);
+    @include widhei(50%, 800px);
+  }
+
+  .contact-form {
+    padding: 1rem;
+    @include widhei(100%, 100%);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 30px;
+  }
+
+  .button-input {
+    margin: 70px 40%;
+  }
+
+  .input-text {
+    width: 100%;
+  }
+
+  .contact-title{
+    text-align: center;
+  }
+
+  .input-conteiner{
+    margin-top: 1.5rem;
+  }
+
+/* -----------------------CONTACT MOBILE----------------------- */
+@media screen and (max-width:480px) {
+    .form-conteiner{
+      width: 80%;
+    }
+    .button-input{
+      margin: 70px;
+    }
+  }

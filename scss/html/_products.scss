@@ -1,0 +1,39 @@
+ @import "../utilidades/mixin";
+ /* -----------------------PRODUCTS----------------------- */
+
+ .products-container {
+     div {
+         img {
+             @include widhei(100%, 70%);
+             object-fit: cover;
+         }
+     }
+ }
+
+ .products-container {
+     height: 100%;
+     padding: 3rem;
+     margin: 1rem;
+     overflow: auto;
+     display: grid;
+     grid-template-rows: repeat(6, 20%);
+     row-gap: 2rem;
+ }
+
+ .products-container {
+     div {
+         p {
+             text-align: center;
+         }
+     }
+ }
+
+ /* -----------------------PRODUCTS DESKTOP----------------------- */
+ @media screen and (min-width:600px){
+    .products-container{
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2,50%);
+      column-gap: 1rem;
+      overflow: hidden;
+    }
+  }

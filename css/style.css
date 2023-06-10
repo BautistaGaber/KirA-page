@@ -1,0 +1,209 @@
+/* reset */
+* {
+  margin: 0;
+  /* espacio interior */
+  padding: 0;
+  /* espacio Exterior */
+  box-sizing: border-box;
+  /* resetea la caja del navegador */ }
+
+/* -----------------------NAV----------------------- */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid black;
+  box-shadow: 5px 2px 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+  header nav img {
+    width: 90px;
+    height: 40px; }
+
+.navegation .navegation-bar {
+  justify-content: center; }
+
+/* -----------------------HOME----------------------- */
+.index-page {
+  background-image: url(../../proyecto-pagweb/img/fotoinicio.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%; }
+  .index-page .index-conteiner {
+    padding: 30%; }
+
+/* -----------------------PRODUCTS----------------------- */
+.products-container div img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover; }
+
+.products-container {
+  height: 100%;
+  padding: 3rem;
+  margin: 1rem;
+  overflow: auto;
+  display: grid;
+  grid-template-rows: repeat(6, 20%);
+  row-gap: 2rem; }
+
+.products-container div p {
+  text-align: center; }
+
+/* -----------------------PRODUCTS DESKTOP----------------------- */
+@media screen and (min-width: 600px) {
+  .products-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    column-gap: 1rem;
+    overflow: hidden; } }
+
+/* -----------------------ABOUT US----------------------- */
+.image-about {
+  background-image: url(../../proyecto-pagweb/img/fondoAbout.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 400px; }
+
+.text-about {
+  text-align: center;
+  color: #666;
+  margin: 40px 50px 40px; }
+
+.title-about {
+  text-align: center;
+  margin-top: 50px; }
+
+/* -----------------------CONTACT----------------------- */
+.contact-page {
+  background-image: url(../../proyecto-pagweb/img/fondoAbout.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.form-conteiner {
+  border: 1px solid black;
+  width: 50%;
+  height: 800px; }
+
+.contact-form {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 30px; }
+
+.button-input {
+  margin: 70px 40%; }
+
+.input-text {
+  width: 100%; }
+
+.contact-title {
+  text-align: center; }
+
+.input-conteiner {
+  margin-top: 1.5rem; }
+
+/* -----------------------CONTACT MOBILE----------------------- */
+@media screen and (max-width: 480px) {
+  .form-conteiner {
+    width: 80%; }
+  .button-input {
+    margin: 70px; } }
+
+/* -----------------------LOCATION----------------------- */
+.location-page {
+  background-image: url(../../proyecto-pagweb/img/fondoAbout.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.location-conteiner {
+  background-color: #d5d2d2;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 50%;
+  height: 550px;
+  display: flex; }
+
+.location-text {
+  background-color: #ffffff;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column; }
+
+.location-title {
+  font-size: 25px;
+  margin-top: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+
+.location-map {
+  background-color: #ffffff;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column; }
+
+.location-map-ubication {
+  margin-top: 100px;
+  margin-left: 35px; }
+
+/* -----------------------FOOTER----------------------- */
+footer {
+  background-color: #f1f1f1;
+  border-top: 1px solid black;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 10px;
+  color: #000000; }
+
+.container {
+  width: 100%; }
+
+.icons {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #666;
+    font-size: 18px; }
+  .icons a:hover {
+    color: #000000; }
+  .icons i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #c1c1c1; }
+
+.copy {
+  margin-top: 20px; }
