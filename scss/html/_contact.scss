@@ -12,7 +12,7 @@
     justify-content: center;
   }
 
-  .form-conteiner {
+  .form-container {
     border: 1px solid rgb(0, 0, 0);
     @include widhei(50%, 800px);
   }
@@ -40,13 +40,13 @@
     text-align: center;
   }
 
-  .input-conteiner{
+  .input-container{
     margin-top: 1.5rem;
   }
 
 /* -----------------------CONTACT MOBILE----------------------- */
 @media screen and (max-width:480px) {
-    .form-conteiner{
+    .form-container{
       width: 80%;
     }
     .button-input{
