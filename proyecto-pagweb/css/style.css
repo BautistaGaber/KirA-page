@@ -24,7 +24,7 @@ header {
 
 /* -----------------------HOME----------------------- */
 .index-page {
-  background-image: url(../../proyecto-pagweb/img/fotoinicio.png);
+  background-image: url(../img/fotoinicio.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
