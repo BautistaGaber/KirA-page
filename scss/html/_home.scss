@@ -1,11 +1,43 @@
   /* -----------------------HOME----------------------- */
-.index-page {
-  background-image: url(../img/fotoinicio.png);
-  background-repeat: no-repeat;
+  .index-page {
+    background-image: url(../img/fotoinicio.png);
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: end;
+
     .index-container {
-        padding: 30%;
+      width: 50%;
+      height: 100%;
+      padding: 10px;
+
+      .index-container-info-title {
+        color: white;
       }
+
+      .index-container-info-text {
+        color: white;
+      }
+
+      .index-container-info-button {
+        a {
+          button {
+            padding: 8px 25px;
+            font-size: 16px;
+            border: none;
+            transition-duration: 200ms;
+          }
+
+          button:hover {
+            background-color: rgb(20, 20, 20);
+            color: white;
+          }
+        }
+
+      }
+
+    }
   }

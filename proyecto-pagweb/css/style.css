@@ -28,9 +28,26 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  width: 100%; }
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: end; }
   .index-page .index-container {
-    padding: 30%; }
+    width: 50%;
+    height: 100%;
+    padding: 10px; }
+    .index-page .index-container .index-container-info-title {
+      color: white; }
+    .index-page .index-container .index-container-info-text {
+      color: white; }
+    .index-page .index-container .index-container-info-button a button {
+      padding: 8px 25px;
+      font-size: 16px;
+      border: none;
+      transition-duration: 200ms; }
+    .index-page .index-container .index-container-info-button a button:hover {
+      background-color: #141414;
+      color: white; }
 
 /* -----------------------PRODUCTS----------------------- */
 .products-container div img {
@@ -45,10 +62,8 @@ header {
   margin: 1rem;
   overflow: auto;
   display: grid;
-  grid-template-rows: repeat(6, 20%);
+  grid-template-rows: repeat(3, 20%);
   row-gap: 2rem; }
-  .products-container .img-uno-container:hover {
-    color: red; }
 
 .products-container div p {
   text-align: center; }
@@ -57,7 +72,7 @@ header {
 @media screen and (min-width: 600px) {
   .products-container {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 50%);
+    grid-template-rows: repeat(3, 1fr);
     column-gap: 1rem;
     overflow: hidden; } }
 
@@ -68,7 +83,7 @@ header {
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  height: 400px; }
+  height: 60vh; }
 
 .text-about {
   text-align: center;
