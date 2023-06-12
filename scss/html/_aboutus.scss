@@ -17,3 +17,10 @@
     text-align: center;
     margin-top: 50px;
   }
+
+  /* -----------------------ABOUTUS MOBILE & TABLET----------------------- */
+  @media screen and (max-width:990px){
+    .image-about{
+      background-position: center;
+    }
+  }

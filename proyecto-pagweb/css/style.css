@@ -33,7 +33,6 @@ header {
   display: flex;
   align-items: end; }
   .index-page .index-container {
-    width: 50%;
     height: 100%;
     padding: 10px; }
     .index-page .index-container .index-container-info-title {
@@ -49,32 +48,53 @@ header {
       background-color: #141414;
       color: white; }
 
+/* -----------------------HOME MOBILE & TABLET----------------------- */
+@media screen and (max-width: 960px) {
+  .index-page {
+    background-image: url(../img/fondoAbout.png);
+    background-position: center; } }
+
 /* -----------------------PRODUCTS----------------------- */
 .products-container div img {
   width: 100%;
   height: 70%;
   object-fit: cover;
-  cursor: pointer; }
+  cursor: pointer;
+  opacity: 1; }
 
 .products-container {
   height: 100%;
   padding: 3rem;
-  margin: 1rem;
   overflow: auto;
   display: grid;
   grid-template-rows: repeat(3, 20%);
-  row-gap: 2rem; }
+  background-color: #ffffff;
+  row-gap: 1rem; }
+  .products-container .img-container {
+    display: flex;
+    flex-direction: column; }
+    .products-container .img-container div p {
+      width: 100%;
+      height: 15%;
+      padding: 1rem;
+      background-color: #eeeeee;
+      font-size: 25px; }
 
-.products-container div p {
-  text-align: center; }
+.img-container div:hover p {
+  color: #233ea3; }
 
-/* -----------------------PRODUCTS DESKTOP----------------------- */
+/* -----------------------PRODUCTS TABLET----------------------- */
 @media screen and (min-width: 600px) {
   .products-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    column-gap: 1rem; } }
+
+/* -----------------------PRODUCTS DESKTOP----------------------- */
+@media screen and (min-width: 1024px) {
+  .products-container {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    column-gap: 1rem;
-    overflow: hidden; } }
+    grid-template-rows: repeat(3, 1fr); } }
 
 /* -----------------------ABOUT US----------------------- */
 .image-about {
@@ -93,6 +113,11 @@ header {
 .title-about {
   text-align: center;
   margin-top: 50px; }
+
+/* -----------------------ABOUTUS MOBILE & TABLET----------------------- */
+@media screen and (max-width: 990px) {
+  .image-about {
+    background-position: center; } }
 
 /* -----------------------CONTACT----------------------- */
 .contact-page {
@@ -141,6 +166,11 @@ header {
   .button-input {
     margin: 70px; } }
 
+/* -----------------------CONTACT TABLET----------------------- */
+@media screen and (max-width: 960px) {
+  .button-input {
+    margin: 70px; } }
+
 /* -----------------------LOCATION----------------------- */
 .location-page {
   background-image: url(../img/fondoAbout.png);
@@ -186,8 +216,35 @@ header {
   flex-direction: column; }
 
 .location-map-ubication {
+  width: 100%;
   margin-top: 100px;
-  margin-left: 35px; }
+  padding: 2rem; }
+
+/* -----------------------LOCATION MOBILE & TABLET----------------------- */
+@media screen and (max-width: 1024px) {
+  .location-container {
+    flex-direction: column;
+    width: 70%;
+    height: fit-content;
+    border-radius: 8px; }
+    .location-container .location-text {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
+      .location-container .location-text .location-title {
+        margin-top: 3rem;
+        padding: 2rem; }
+    .location-container .location-map {
+      width: 100%;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px; }
+      .location-container .location-map .location-map-ubication {
+        width: 100%;
+        margin: 0;
+        padding: 1rem; } }
 
 /* -----------------------FOOTER----------------------- */
 footer {
