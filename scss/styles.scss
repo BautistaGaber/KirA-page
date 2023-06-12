@@ -15,9 +15,7 @@
 
 /* -----------------------NAV----------------------- */
 header {
-    background-color: $color-primario-nav;
-    border-bottom: 1px solid black;
-    box-shadow: 5px 2px 15px;
+    @extend %border;
     position: sticky;
     top: 0;
     z-index: 1;

@@ -4,10 +4,9 @@
  .products-container {
      div {
          img {
-             @include widhei(100%, 70%);
+             @include widhei(100%, 100%);
              object-fit: cover;
              cursor: pointer;
-             opacity: 1;
          }
      }
  }
@@ -17,33 +16,25 @@
      padding: 3rem;
      overflow: auto;
      display: grid;
-     grid-template-rows: repeat(3, 20%);
+     grid-template-rows: repeat(3, 12%);
      background-color: $color-primario-nav;
      row-gap: 1rem;
 
      .img-container {
          display: flex;
          flex-direction: column;
-         div {
+         border:  1px solid black;   
+         height: 500px; 
              p {
                  width: 100%;
-                 height: 15%;
-                 padding: 1rem;
-                 background-color: rgba(238, 238, 238, 255);                 
+                 padding: 1rem;                 
                  font-size: 25px;
-                }
-         }
+                 text-align: center;
+                 background-color:  #eeeeee;
+                 margin-bottom: 0px;
+             }
      }
 
- }
-
- .img-container {
-    div:hover{
-        p {
-         color: rgb(35, 62, 163);
-     }
-    }
-     
  }
 
  /* -----------------------PRODUCTS TABLET----------------------- */
@@ -60,5 +51,8 @@
      .products-container {
          grid-template-columns: repeat(3, 1fr);
          grid-template-rows: repeat(3, 1fr);
+         .img-container{
+            height: fit-content;
+         }
      }
  }
