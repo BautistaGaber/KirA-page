@@ -1,12 +1,14 @@
   @import "../utilidades/mixin";
+
   /* -----------------------ABOUT US----------------------- */
-.image-about {
+  .image-about {
     background-image: url(../img/fondoAbout.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    @include widhei(100%,60vh)
+    @include widhei(100%, 60vh)
   }
+
   .text-about {
     text-align: center;
     color: #666;
@@ -19,8 +21,8 @@
   }
 
   /* -----------------------ABOUTUS MOBILE & TABLET----------------------- */
-  @media screen and (max-width:990px){
-    .image-about{
+  @media screen and (max-width:990px) {
+    .image-about {
       background-position: center;
     }
   }

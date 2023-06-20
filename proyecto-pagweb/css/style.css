@@ -140,44 +140,38 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-
-.form-container {
-  border: 1px solid black;
-  width: 50%;
-  height: 800px; }
-
-.contact-form {
-  padding: 1rem;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 30px; }
-
-.button-input {
-  margin: 70px 40%; }
-
-.input-text {
-  width: 100%; }
-
-.contact-title {
-  text-align: center; }
-
-.input-container {
-  margin-top: 1.5rem; }
+  .contact-page .form-container {
+    border: 1px solid black;
+    width: 50%;
+    height: 800px; }
+    .contact-page .form-container .contact-form {
+      padding: 1rem;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 30px; }
+      .contact-page .form-container .contact-form .button-input {
+        margin: 70px 40%; }
+      .contact-page .form-container .contact-form .contact-title {
+        text-align: center; }
+      .contact-page .form-container .contact-form .input-container {
+        margin-top: 1.5rem; }
+        .contact-page .form-container .contact-form .input-container .input-text {
+          width: 100%; }
 
 /* -----------------------CONTACT MOBILE----------------------- */
 @media screen and (max-width: 480px) {
-  .form-container {
+  .contact-page .form-container {
     width: 80%; }
-  .button-input {
-    margin: 70px; } }
+    .contact-page .form-container .contact-form .button-input {
+      margin: 70px; } }
 
 /* -----------------------CONTACT TABLET----------------------- */
 @media screen and (max-width: 960px) {
-  .button-input {
+  .contact-page .form-container .contact-form .button-input {
     margin: 70px; } }
 
 header {
@@ -197,65 +191,60 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-
-.location-container {
-  background-color: #d5d2d2;
-  border: 1px solid black;
-  border-radius: 30px;
-  width: 50%;
-  height: 550px;
-  display: flex; }
-
-.location-text {
-  background-color: #ffffff;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  width: 50%;
-  display: flex;
-  flex-direction: column; }
-
-.location-title {
-  font-size: 25px;
-  margin-top: 50%;
-  display: flex;
-  text-align: center;
-  justify-content: center; }
-
-.location-map {
-  background-color: #ffffff;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  width: 50%;
-  display: flex;
-  flex-direction: column; }
-
-.location-map-ubication {
-  width: 100%;
-  margin-top: 100px;
-  padding: 2rem; }
+  .location-page .location-container {
+    background-color: #d5d2d2;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 50%;
+    height: 550px;
+    display: flex; }
+    .location-page .location-container .location-text {
+      background-color: #ffffff;
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+      width: 50%;
+      display: flex;
+      flex-direction: column; }
+      .location-page .location-container .location-text .location-title {
+        font-size: 25px;
+        margin-top: 50%;
+        display: flex;
+        text-align: center;
+        justify-content: center; }
+    .location-page .location-container .location-map {
+      background-color: #ffffff;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      width: 50%;
+      display: flex;
+      flex-direction: column; }
+      .location-page .location-container .location-map .location-map-ubication {
+        width: 100%;
+        margin-top: 100px;
+        padding: 2rem; }
 
 /* -----------------------LOCATION MOBILE & TABLET----------------------- */
 @media screen and (max-width: 1024px) {
-  .location-container {
+  .location-page .location-container {
     flex-direction: column;
     width: 70%;
     height: fit-content;
     border-radius: 8px; }
-    .location-container .location-text {
+    .location-page .location-container .location-text {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
-      .location-container .location-text .location-title {
+      .location-page .location-container .location-text .location-title {
         margin-top: 3rem;
         padding: 2rem; }
-    .location-container .location-map {
+    .location-page .location-container .location-map {
       width: 100%;
       border-top-right-radius: 0px;
       border-bottom-right-radius: 0px; }
-      .location-container .location-map .location-map-ubication {
+      .location-page .location-container .location-map .location-map-ubication {
         width: 100%;
         margin: 0;
         padding: 1rem; } }
